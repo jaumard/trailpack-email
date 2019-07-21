@@ -25,7 +25,7 @@
     "nodemailer"
   ],
   "dependencies": {
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.12",
     "nodemailer": "^4.6.3",
     "trailpack": "^3.0.0"
   },
