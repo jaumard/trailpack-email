@@ -27,7 +27,8 @@
   "dependencies": {
     "lodash": "^4.17.5",
     "nodemailer": "^4.6.3",
-    "trailpack": "^3.0.0"
+    "trailpack": "^3.0.0",
+    "snyk": "^1.316.2"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
@@ -37,7 +38,9 @@
     "trails": "^3.2.1"
   },
   "scripts": {
-    "test": "eslint . && mocha"
+    "test": "eslint . && mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "engines": {
     "node": ">= 4.0.0"
@@ -46,5 +49,6 @@
     "extends": "trails"
   },
   "repository": "https://github.com/jaumard/trailpack-email",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
